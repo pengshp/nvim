@@ -23,11 +23,12 @@ return {
       -- },
       --
       -- # Example of using shfmt with extra args
-      -- shfmt = {
-      --   prepend_args = { "-i", "2", "-ci" },
-      -- },
+      shfmt = {
+        prepend_args = { "-i", "4", "-ci" },
+      },
       ruff_format = {
-        command = "ruff format",
+        command = "ruff",
+        prepend_args = { "format", "-" },
         env = {},
       },
       taplo = {
