@@ -10,7 +10,7 @@ rose-pine/neovim
 ## Usage
 
 ```bash
-$ git clone https://github.com/pengshp/nvim.git ~/.config/
+$ git clone https://github.com/pengshp/nvim.git ~/.config/nvim
 $ nvim
 ```
 

@@ -1,6 +1,21 @@
 return {
   {
     "williamboman/mason-lspconfig.nvim",
+    opts = {
+      ensure_installed = {
+        "lua_ls",
+        "pylsp",
+        "bashls",
+        "gopls",
+        "dockerls",
+        "jsonls",
+        "taplo",
+        "yamlls",
+        "marksman",
+        "terraformls",
+      },
+      automatic_installation = { exclude = { "gopls" } },
+    },
   },
   {
     "neovim/nvim-lspconfig",
