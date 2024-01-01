@@ -5,6 +5,7 @@ return {
       ensure_installed = {
         "bash",
         "json",
+        "jsonc",
         "lua",
         "markdown",
         "markdown_inline",

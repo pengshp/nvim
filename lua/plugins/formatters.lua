@@ -7,7 +7,7 @@ return {
       fish = { "fish_indent" },
       sh = { "shfmt" },
       go = { "gofmt" },
-      python = { "ruff" },
+      -- python = { "ruff" },
       toml = { "taplo" },
     },
     -- The options you set here will be merged with the builtin formatters.
@@ -26,11 +26,11 @@ return {
       shfmt = {
         prepend_args = { "-i", "4", "-ci" },
       },
-      ruff_format = {
-        command = "ruff",
-        prepend_args = { "format", "-" },
-        env = {},
-      },
+      -- ruff_format = {
+      --   command = "ruff",
+      --   prepend_args = { "format", "-" },
+      --   env = {},
+      -- },
       taplo = {
         command = "taplo",
         inherit = true,

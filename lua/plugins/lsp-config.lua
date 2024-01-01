@@ -4,7 +4,7 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
-        "pylsp",
+        -- "pylsp",
         "bashls",
         "gopls",
         "dockerls",
@@ -30,11 +30,18 @@ return {
         -- pyright will be automatically installed with mason and loaded with lspconfig
         -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
         pylsp = {
-          settings = {},
+          -- settings = {},
+          mason = false,
+          cmd = { "pylsp" },
+          filetypes = { "python" },
           plugins = {
+            pycodestyle = { enabled = false },
+            mccabe = { enabled = false },
+            pyflakes = { enabled = false },
+            autopep8 = { enabled = false },
             ruff = {
               enabled = true, -- Enable the plugin
-              executable = "/usr/bin/ruff", -- Custom path to ruff
+              executable = "ruff", -- Custom path to ruff
               -- path = "",  -- Custom config for ruff to use
               extendSelect = { "I" }, -- Rules that are additionally used by ruff
               extendIgnore = { "C90" }, -- Rules that are additionally ignored by ruff

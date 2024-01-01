@@ -16,6 +16,6 @@ return {
         mode = "background", -- Set the display mode.
       },
     },
-    ft = { "css", "conf" },
+    ft = { "css", "cfg", "conf" },
   },
 }
