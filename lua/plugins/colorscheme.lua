@@ -7,27 +7,35 @@ return {
       variant = "auto",
       --- @usage 'main'|'moon'|'dawn'
       dark_variant = "moon",
-      bold_vert_split = false,
-      dim_nc_background = false,
-      disable_background = true,
-      disable_float_background = false,
-      disable_italics = false,
+      dim_inactive_windows = false,
+      extend_background_behind_borders = true,
 
-      --- @usage string hex value or named color from rosepinetheme.com/palette
+      styles = {
+        bold = true,
+        italic = true,
+        transparency = true,
+      },
+
       groups = {
-        background = "base",
-        background_nc = "_experimental_nc",
-        panel = "surface",
-        panel_nc = "base",
-        border = "highlight_med",
-        comment = "muted",
+        border = "muted",
         link = "iris",
-        punctuation = "subtle",
+        panel = "surface",
 
         error = "love",
         hint = "iris",
         info = "foam",
         warn = "gold",
+
+        git_add = "foam",
+        git_change = "rose",
+        git_delete = "love",
+        git_dirty = "rose",
+        git_ignore = "muted",
+        git_merge = "iris",
+        git_rename = "pine",
+        git_stage = "iris",
+        git_text = "rose",
+        git_untracked = "subtle",
 
         headings = {
           h1 = "iris",
@@ -37,8 +45,8 @@ return {
           h5 = "pine",
           h6 = "foam",
         },
-        -- or set all headings at once
-        -- headings = 'subtle'
+        -- Alternatively, set all headings at once.
+        -- headings = "subtle",
       },
 
       -- Change specific vim highlight groups
