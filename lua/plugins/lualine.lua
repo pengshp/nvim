@@ -1,5 +1,6 @@
 return {
   "nvim-lualine/lualine.nvim",
+  event = "ColorScheme",
   opts = {
     options = {
       icons_enabled = true,

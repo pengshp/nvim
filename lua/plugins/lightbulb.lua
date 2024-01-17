@@ -24,7 +24,7 @@ return {
         -- Example: {"neo-tree", "lua"}
         ft = { "neo-tree" },
         -- Ignore code actions without a `kind` like refactor.rewrite, quickfix.
-        actions_without_kind = false,
+        actions_without_kind = true,
       },
     },
   },

@@ -6,6 +6,7 @@ debug
 foo.*
 *.log
 data
+.luarc.json
 
 # Compiled Lua sources
 luac.out
