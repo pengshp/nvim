@@ -6,10 +6,14 @@ return {
     keys = {
       { "<F5>", "<cmd>ToggleTerm<cr>", desc = "ToggleTerm" },
     },
-    opts = {
-      open_mapping = [[<F5>]],
-      size = 10,
-      direction = "horizontal",
-    },
+    config = function()
+      local highlights = require("rose-pine.plugins.toggleterm")
+      require("toggleterm").setup({
+        highlights = highlights,
+        open_mapping = [[<F5>]],
+        size = 10,
+        direction = "horizontal",
+      })
+    end,
   },
 }

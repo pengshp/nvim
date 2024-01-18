@@ -8,6 +8,7 @@ return {
       sh = { "shfmt" },
       go = { "gofmt" },
       -- python = { "ruff" },
+      json = { "jq" },
       toml = { "taplo" },
     },
     -- The options you set here will be merged with the builtin formatters.
