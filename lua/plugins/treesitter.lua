@@ -15,7 +15,7 @@ return {
         "dockerfile",
         "toml",
         "go",
-        "kcl",
+        "hcl",
       },
     },
     keys = {

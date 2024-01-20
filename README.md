@@ -39,7 +39,7 @@ $ nvim
 | sql        | sqlls       | sql        |
 | markdown   | marksman    | markdown   |
 | terraform  | terraformls | terraform  |
-| kcl        | kcl         | kcl        |
+| kcl        | kcl         |            |
 
 
 ## Reference
