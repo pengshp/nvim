@@ -15,7 +15,8 @@ $ git clone https://github.com/pengshp/nvim.git ~/.config/nvim
 $ nvim
 ```
 
-## Features
+## Feature
+
 | Plugin                     | Desc                                             |
 | -------------------------- | ------------------------------------------------ |
 | chrisgrieser/nvim-scissors | Automagical editing and creation of snippets.    |
@@ -25,11 +26,24 @@ $ nvim
 
 ## LSP and Treesitter
 
-- golang
-- python
-- bash
-- json
-- toml
-- yaml
-- dockerfile
-- terraform
+| Language   | LSP         | Treesitter |
+| ---------- | ----------- | ---------- |
+| python     | pylsp       | python     |
+| lua        | lua_ls      | lua        |
+| golang     | gopls       | go         |
+| dockerfile | dockerls    | dockerfile |
+| bash       | bashls      | bash       |
+| yaml       | yamlls      | yaml       |
+| json       | jsonls      | json,jsonc |
+| toml       | taplo       | toml       |
+| sql        | sqlls       | sql        |
+| markdown   | marksman    | markdown   |
+| terraform  | terraformls | terraform  |
+| kcl        | kcl         | kcl        |
+
+
+## Reference
+
+1. [Treesitter](https://tree-sitter.github.io/tree-sitter/)
+2. [LazyVim](https://www.lazyvim.org/)
+3. [LSP](https://microsoft.github.io/language-server-protocol/)
