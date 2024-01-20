@@ -5,7 +5,8 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ## Themes
 
-rose-pine/neovim
+~~rose-pine/neovim~~
+catppuccin/nvim
 
 ## Usage
 
@@ -15,9 +16,12 @@ $ nvim
 ```
 
 ## Features
-
-- fcitx5.nvim
-- Toggleterm
+| Plugin                     | Desc                                             |
+| -------------------------- | ------------------------------------------------ |
+| chrisgrieser/nvim-scissors | Automagical editing and creation of snippets.    |
+| pysan3/fcitx5.nvim         | switch and restore fcitx state for each buffer.  |
+| akinsho/toggleterm.nvim    | manage multiple terminal windows.                |
+| NvChad/nvim-colorizer.lua  | Maintained fork of the fastest Neovim colorizer. |
 
 ## LSP and Treesitter
 

@@ -27,6 +27,11 @@ require("lazy").setup({
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
   install = { colorscheme = { "tokyonight" } },
+  ui = {
+    size = { width = 0.8, height = 0.8 },
+    border = "rounded",
+    title = "lazy.nvim",
+  },
   checker = { enabled = false }, -- automatically check for plugin updates
   performance = {
     rtp = {
