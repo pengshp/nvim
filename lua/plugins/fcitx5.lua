@@ -9,7 +9,7 @@ return {
       imname = {
         norm = "keyboard-us",
         -- ins = "keyboard-us", --pinyin
-        -- cmd = "keyboard-us",
+        cmd = "keyboard-us",
         vis = "keyboard-us",
         term = "keyboard-us",
       },

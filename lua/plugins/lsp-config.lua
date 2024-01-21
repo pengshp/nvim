@@ -19,10 +19,10 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
-    init = function()
-      local keys = require("lazyvim.plugins.lsp.keymaps").get()
-      keys[#keys + 1] = { "<C-Space>", false }
-    end,
+    -- init = function()
+    --   local keys = require("lazyvim.plugins.lsp.keymaps").get()
+    --   keys[#keys + 1] = { "<C-Space>", false }
+    -- end,
     -- @class PluginLspOpts
     opts = {
       -- @type lspconfig.options
@@ -88,6 +88,32 @@ return {
           mason = false,
           cmd = { "gopls", "serve" },
           filetypes = { "go", "gomod", "gowork", "gotmpl" },
+          single_file_support = true,
+        },
+        ansiblels = {
+          mason = false,
+          cmd = { "ansible-language-server", "--stdio" },
+          filetypes = { "yaml.ansible" },
+          settings = {
+            ansible = {
+              ansible = {
+                path = "ansible",
+              },
+              executionEnvironment = {
+                enabled = false,
+              },
+              python = {
+                interpreterPath = "python",
+              },
+              validation = {
+                enabled = true,
+                lint = {
+                  enabled = true,
+                  path = "ansible-lint",
+                },
+              },
+            },
+          },
           single_file_support = true,
         },
         taplo = {},

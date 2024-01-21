@@ -53,8 +53,8 @@ return {
         comments = { "italic" }, -- Change the style of comments
         conditionals = { "italic" },
         loops = {},
-        functions = { "italic" },
-        keywords = {},
+        functions = {},
+        keywords = { "italic" },
         strings = {},
         variables = {},
         numbers = {},

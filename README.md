@@ -38,7 +38,7 @@ $ nvim
 | toml       | taplo       | toml       |
 | sql        | sqlls       | sql        |
 | markdown   | marksman    | markdown   |
-| terraform  | terraformls | terraform  |
+| terraform  | terraformls | hcl        |
 | kcl        | kcl         |            |
 
 
