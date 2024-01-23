@@ -14,15 +14,16 @@ return {
       function()
         require("scissors").editSnippet()
       end,
-      desc = "edit Snippet.",
+      desc = "Edit Snippet",
     },
     {
       mode = { "n", "x" },
-      "<leader>sl",
+      "<leader>sp",
       function()
         require("scissors").addNewSnippet()
       end,
-      desc = "add new snippet.",
+      desc = "Add new snippet",
     },
   },
+  -- cmd = { "addNewSnippet", "editSnippet" },
 }

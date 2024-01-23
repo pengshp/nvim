@@ -21,10 +21,10 @@ vim.api.nvim_create_autocmd("BufRead", {
     -- In lua, `[[ ... ]]` is a literal string. If i used double quotes
     -- instead, then next line would look like this:
     --
-    -- `if vim.fn.search("hosts:\\|tasks:", "nw") then`
-    --
-    -- Notice how i had to escape the backslash
-    if vim.fn.search([[hosts:\|tasks:]], "nw") then
+    if vim.fn.search("hosts:\\|tasks:", "nw") then
+      --
+      -- Notice how i had to escape the backslash
+      -- if vim.fn.search([[hosts:\|tasks:]], "nw") then
       -- Thi uses Neovim's options api. Alternatively, you could do this:
       --
       -- `vim.cmd("set filetype = yaml.ansible")`

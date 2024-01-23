@@ -13,6 +13,7 @@ return {
         open_mapping = [[<F5>]],
         size = 10,
         direction = "horizontal",
+        shell = "zsh",
       })
     end,
   },
