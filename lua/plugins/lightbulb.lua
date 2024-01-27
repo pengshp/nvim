@@ -1,6 +1,7 @@
 return {
   {
     "kosayoda/nvim-lightbulb",
+    enabled = false,
     lazy = true,
     event = "VeryLazy",
     opts = {
