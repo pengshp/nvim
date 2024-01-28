@@ -23,6 +23,8 @@ $ nvim
 | pysan3/fcitx5.nvim         | switch and restore fcitx state for each buffer.  |
 | akinsho/toggleterm.nvim    | manage multiple terminal windows.                |
 | NvChad/nvim-colorizer.lua  | Maintained fork of the fastest Neovim colorizer. |
+| CRAG666/code_runner.nvim   | The best code runner you could have.             |
+
 
 ## LSP and Treesitter
 
