@@ -42,6 +42,7 @@ $ nvim
 | markdown   | marksman    | markdown   |
 | terraform  | terraformls | hcl        |
 | kcl        | kcl         |            |
+| ansible    | ansiblels   | yaml       |
 
 
 ## Reference
