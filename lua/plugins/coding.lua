@@ -52,6 +52,7 @@ return {
         yaml = { "yamllint" },
         bash = { "shellcheck" },
         markdown = { "markdownlint" },
+        dockerfile = { "hadolint" },
       },
       linters = {},
     },
