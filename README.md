@@ -15,7 +15,7 @@ $ git clone https://github.com/pengshp/nvim.git ~/.config/nvim
 $ nvim
 ```
 
-## Feature
+## Features
 
 | Plugin                     | Desc                                             |
 | -------------------------- | ------------------------------------------------ |
