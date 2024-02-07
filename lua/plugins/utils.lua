@@ -23,7 +23,7 @@ return {
   -- css colorizer.
   {
     "NvChad/nvim-colorizer.lua",
-    ft = { "css", "cfg", "conf" },
+    ft = { "css", "cfg", "conf", "lua" },
     opts = {
       filetypes = { "*" },
       user_default_options = {

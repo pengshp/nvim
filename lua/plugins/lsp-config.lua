@@ -91,7 +91,7 @@ return {
           single_file_support = true,
         },
         ansiblels = {
-          mason = false,
+          mason = true,
           cmd = { "ansible-language-server", "--stdio" },
           filetypes = { "yaml.ansible" },
           settings = {

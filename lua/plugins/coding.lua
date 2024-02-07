@@ -5,37 +5,22 @@ return {
     opts = {
       formatters_by_ft = {
         lua = { "stylua" },
-        fish = { "fish_indent" },
-        sh = { "shfmt" },
-        go = { "gofmt" },
-        -- python = { "ruff" },
+        bash = { "shfmt" },
+        go = { "gofmt", "goimports", "gofumpt" },
+        python = { "ruff" },
         json = { "jq" },
         toml = { "taplo" },
+        markdown = { "markdownlint" },
+        yaml = { "yamlfmt" },
+        sql = { "sqlfmt" },
       },
       -- the options you set here will be merged with the builtin formatters.
       -- you can also define any custom formatters here.
       formatters = {
         injected = { options = { ignore_errors = true } },
-        -- # example of using dprint only when a dprint.json file is present
-        -- dprint = {
-        --   condition = function(ctx)
-        --     return vim.fs.find({ "dprint.json" }, { path = ctx.filename, upward = true })[1]
-        --   end,
-        -- },
-        --
         -- # example of using shfmt with extra args
         shfmt = {
           prepend_args = { "-i", "4", "-ci" },
-        },
-        -- ruff_format = {
-        --   command = "ruff",
-        --   prepend_args = { "format", "-" },
-        --   env = {},
-        -- },
-        taplo = {
-          command = "taplo",
-          inherit = true,
-          prepend_args = { "" },
         },
       },
     },
