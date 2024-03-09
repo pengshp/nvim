@@ -90,4 +90,9 @@ return {
     end,
     enable = true,
   },
+  {
+    "soulis-1256/eagle.nvim",
+    event = "LspAttach",
+    config = true,
+  },
 }
