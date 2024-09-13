@@ -14,6 +14,8 @@ local options = {
   autoread = true,
   swapfile = false,
   backup = false,
+  spelllang = "en_us,cjk",
+  spelloptions = "camel",
 }
 
 for key, val in pairs(options) do
