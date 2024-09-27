@@ -84,17 +84,20 @@ return {
         shell = "zsh",
       })
     end,
-    enable = true,
+    enabled = true,
   },
+  -- Show diagnostics and lsp info inside a custom window, following the mouse position
   {
     "soulis-1256/eagle.nvim",
-    event = "LspAttach",
+    -- event = "LspAttach",
     config = true,
   },
+
   {
     "Exafunction/codeium.nvim",
-    -- enable = false,
+    -- enabled = false,
     opts = {
+      enterprise_mode = false,
       detect_proxy = true,
       enable_chat = false,
     },
