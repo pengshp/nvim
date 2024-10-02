@@ -1,5 +1,14 @@
 # 💤 LazyVim
 
+<!--toc:start-->
+- [💤 LazyVim](#💤-lazyvim)
+  - [Themes](#themes)
+  - [Usage](#usage)
+  - [Features](#features)
+  - [LSP and Treesitter](#lsp-and-treesitter)
+  - [Reference](#reference)
+<!--toc:end-->
+
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
 
@@ -11,8 +20,8 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 ## Usage
 
 ```bash
-$ git clone https://github.com/pengshp/nvim.git ~/.config/nvim
-$ nvim
+git clone https://github.com/pengshp/nvim.git ~/.config/nvim
+nvim
 ```
 
 ## Features
@@ -22,9 +31,7 @@ $ nvim
 | chrisgrieser/nvim-scissors | Automagical editing and creation of snippets.    |
 | pysan3/fcitx5.nvim         | switch and restore fcitx state for each buffer.  |
 | akinsho/toggleterm.nvim    | manage multiple terminal windows.                |
-| NvChad/nvim-colorizer.lua  | Maintained fork of the fastest Neovim colorizer. |
 | CRAG666/code_runner.nvim   | The best code runner you could have.             |
-
 
 ## LSP and Treesitter
 
@@ -43,7 +50,6 @@ $ nvim
 | terraform  | terraformls | hcl        |
 | kcl        | kcl         |            |
 | ansible    | ansiblels   | yaml       |
-
 
 ## Reference
 
