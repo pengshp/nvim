@@ -66,7 +66,7 @@ return {
             bashIde = {
               globPattern = "*@(.sh|.inc|.bash|.command)",
             },
-            explainshellEndpoint = "https://shell.esxi.lan/",
+            -- explainshellEndpoint = "https://shell.esxi.lan/",
           },
           single_file_support = true,
         },
@@ -79,6 +79,13 @@ return {
               telemetry = { enable = false },
               completion = {
                 callSnippet = "Replace",
+              },
+              diagnostics = {
+                globals = { "vim" },
+              },
+              -- format = { enable = false },
+              hint = {
+                enable = true,
               },
             },
           },

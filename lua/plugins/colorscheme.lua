@@ -32,7 +32,7 @@ return {
         notify = true,
         mini = {
           enabled = true,
-          indentscope_color = "",
+          indentscope_color = "mauve",
         },
         dashboard = true,
         flash = true,
@@ -45,6 +45,16 @@ return {
         which_key = true,
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
       },
+      custom_highlights = function(colors)
+        return {
+          -- Comment = { fg = colors.flamingo },
+          -- TabLineSel = { bg = colors.pink },
+          -- CmpBorder = { fg = colors.surface2 },
+          -- Pmenu = { bg = colors.none },
+          BlinkCmpMenu = { bg = colors.surface0 },
+          BlinkCmpDoc = { bg = colors.surface1 },
+        }
+      end,
     },
   },
 

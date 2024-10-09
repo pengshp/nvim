@@ -61,7 +61,7 @@ return {
   -- Show diagnostics and lsp info inside a custom window, following the mouse position
   {
     "soulis-1256/eagle.nvim",
-    -- event = "LspAttach",
+    event = "LspAttach",
     config = true,
   },
 
