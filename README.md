@@ -1,11 +1,12 @@
-# 💤 LazyVim
+# LazyVim
 
 <!--toc:start-->
-- [💤 LazyVim](#💤-lazyvim)
+- [LazyVim](#lazyvim)
 - [Themes](#themes)
 - [Usage](#usage)
 - [Features](#features)
 - [LSP and Treesitter](#lsp-and-treesitter)
+- [cmp](#cmp)
 - [Reference](#reference)
 <!--toc:end-->
 
@@ -54,6 +55,7 @@ nvim --headless +"Lazy! sync" +qa
 ## cmp
 
 ~~hrsh7th/nvim-cmp~~
+
 [Saghen/blink.cmp](https://github.com/Saghen/blink.cmp)
 
 ## Reference
