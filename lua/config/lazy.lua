@@ -32,7 +32,7 @@ require("lazy").setup({
     border = "rounded",
     title = "lazy.nvim",
   },
-  checker = { enabled = false }, -- automatically check for plugin updates
+  checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
     rtp = {
       -- disable some rtp plugins

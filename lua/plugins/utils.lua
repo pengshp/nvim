@@ -58,6 +58,11 @@ return {
     end,
     enabled = true,
   },
+  {
+    "willothy/wezterm.nvim",
+    cmd = "WeztermSpawn",
+    config = true,
+  },
   -- Show diagnostics and lsp info inside a custom window, following the mouse position
   {
     "soulis-1256/eagle.nvim",
