@@ -26,6 +26,8 @@ return {
         show = "<C-i>",
         show_documentation = "<C-i>",
         hide_documentation = "<C-i>",
+        scroll_documentation_down = "<PageDown>",
+        scroll_documentation_up = "<PageUp>",
       },
       windows = {
         autocomplete = {

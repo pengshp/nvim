@@ -76,14 +76,14 @@ return {
               workspace = {
                 checkThirdParty = false,
               },
-              telemetry = { enable = false },
               completion = {
-                callSnippet = "Replace",
+                callSnippet = "Disable",
               },
+              codeLens = { enable = true },
               diagnostics = {
                 globals = { "vim" },
               },
-              -- format = { enable = false },
+              format = { enable = true },
               hint = {
                 enable = true,
               },
@@ -125,7 +125,27 @@ return {
         },
         taplo = {},
         dockerls = {},
-        jsonls = {},
+        jsonls = {
+          settings = {
+            json = {
+              schemas = require("schemastore").json.schemas(),
+              validate = { enable = true },
+            },
+          },
+        },
+        yamlls = {
+          settings = {
+            yaml = {
+              schemas = require("schemastore").yaml.schemas(),
+              validate = { enable = true },
+              yamlVersion = 1.2,
+              format = { enable = true },
+              hover = true,
+              completion = true,
+            },
+            redhat = { telemetry = { enabled = false } },
+          },
+        },
         marksman = {},
       },
     },

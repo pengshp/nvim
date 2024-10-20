@@ -13,6 +13,7 @@ return {
         markdown = { "markdownlint-cli2", "markdown-toc" },
         yaml = { "yamlfmt" },
         sql = { "sqlfmt" },
+        css = { "prettier" },
       },
       -- the options you set here will be merged with the builtin formatters.
       -- you can also define any custom formatters here.
