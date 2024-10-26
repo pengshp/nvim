@@ -4,6 +4,7 @@ return {
     name = "catppuccin",
     enabled = true,
     lazy = false,
+    priority = 1000,
     opts = {
       flavour = "macchiato", -- latte, frappe, macchiato, mocha
       background = { -- :h background
@@ -27,6 +28,7 @@ return {
       },
       integrations = {
         cmp = true,
+        blink_cmp = true,
         gitsigns = true,
         treesitter = true,
         notify = true,
@@ -45,16 +47,6 @@ return {
         which_key = true,
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
       },
-      custom_highlights = function(colors)
-        return {
-          -- Comment = { fg = colors.flamingo },
-          -- TabLineSel = { bg = colors.pink },
-          -- CmpBorder = { fg = colors.surface2 },
-          -- Pmenu = { bg = colors.none },
-          BlinkCmpMenu = { bg = colors.surface0 },
-          BlinkCmpDoc = { bg = colors.surface1 },
-        }
-      end,
     },
   },
 

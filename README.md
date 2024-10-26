@@ -33,6 +33,9 @@ nvim --headless +"Lazy! sync" +qa
 | pysan3/fcitx5.nvim         | switch and restore fcitx state for each buffer.  |
 | akinsho/toggleterm.nvim    | manage multiple terminal windows.                |
 | CRAG666/code_runner.nvim   | The best code runner you could have.             |
+| yetone/avante.nvim         | Use your Neovim like using Cursor AI IDE!        |
+| willothy/wezterm.nvim      | Utilities for interacting with the wezterm cli.  |
+| HakonHarnes/img-clip.nvim  | Effortlessly embed images into any markup language|
 
 ## LSP and Treesitter
 

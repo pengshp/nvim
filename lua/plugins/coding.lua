@@ -10,10 +10,11 @@ return {
         python = { "ruff" },
         json = { "jq" },
         toml = { "taplo" },
-        markdown = { "markdownlint-cli2", "markdown-toc" },
+        markdown = { "markdownlint", "markdown-toc" },
         yaml = { "yamlfmt" },
         sql = { "sqlfmt" },
         css = { "prettier" },
+        xml = { "xmlformat" },
       },
       -- the options you set here will be merged with the builtin formatters.
       -- you can also define any custom formatters here.
@@ -37,7 +38,7 @@ return {
         python = { "ruff" },
         yaml = { "yamllint" },
         bash = { "shellcheck" },
-        markdown = { "markdownlint-cli2" },
+        markdown = { "markdownlint" },
         dockerfile = { "hadolint" },
       },
       linters = {},

@@ -69,9 +69,9 @@ return {
     event = "LspAttach",
     config = true,
   },
-
   {
     "Exafunction/codeium.nvim",
+    event = "BufReadPost",
     enabled = false,
     opts = {
       enterprise_mode = false,
