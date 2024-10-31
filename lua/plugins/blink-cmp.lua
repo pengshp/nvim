@@ -2,7 +2,7 @@ return {
   { "hrsh7th/nvim-cmp", enabled = false },
   {
     "saghen/blink.cmp",
-    event = { "BufReadPost" },
+    event = { "BufReadPost", "BufNewFile" },
     -- lazy = false, -- lazy loading handled internally
     -- optional: provides snippets for the snippet source
     dependencies = "rafamadriz/friendly-snippets",
@@ -11,7 +11,7 @@ return {
     version = "v0.*",
     opts = {
       highlight = {
-        use_nvim_cmp_as_default = true,
+        use_nvim_cmp_as_default = false,
       },
       -- set to 'mono' for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
       -- adjusts spacing to ensure icons are aligned
@@ -22,18 +22,7 @@ return {
 
       -- experimental signature help support
       -- trigger = { signature_help = { enabled = true } },
-      keymap = {
-        show = "<C-i>",
-        show_documentation = "<C-i>",
-        hide_documentation = "<C-i>",
-        scroll_documentation_down = "<PageDown>",
-        scroll_documentation_up = "<PageUp>",
-      },
-      windows = {
-        autocomplete = {
-          border = "none",
-        },
-      },
+      keymap = "default",
     },
   },
 }
