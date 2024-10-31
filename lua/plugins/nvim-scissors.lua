@@ -1,7 +1,7 @@
 -- lazy.nvim
 return {
   "chrisgrieser/nvim-scissors",
-  event = "VeryLazy",
+  event = "BufReadPost",
   dependencies = "nvim-telescope/telescope.nvim", -- optional
   opts = {
     snippetDir = vim.fn.stdpath("config") .. "/snippets",

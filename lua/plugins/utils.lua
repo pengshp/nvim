@@ -15,7 +15,7 @@ return {
     keys = {
       -- stylua: ignore
       -- Alt-r
-      { "<M-r>", function() require("code_runner.commands").run_filetype() end, desc = "Run file" },
+      { "<A-r>", function() require("code_runner.commands").run_filetype() end, desc = "Run file" },
     },
     cmd = { "RunCode", "RunFile", "RunProject" },
   },
@@ -77,6 +77,13 @@ return {
       enterprise_mode = false,
       detect_proxy = true,
       enable_chat = false,
+    },
+  },
+  {
+    "echasnovski/mini.animate",
+    opts = {
+      open = { enable = false },
+      close = { enable = false },
     },
   },
 }
