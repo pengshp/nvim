@@ -26,7 +26,7 @@ vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
   group = ft_lsp_group,
   desc = "Fix the issue where the LSP don't start with ansible.",
   callback = function()
-    if vim.fn.findfile("ansible.cfg", ".") then
+    if vim.fn.findfile("ansible.cfg", vim.fn.getcwd()) then
       vim.opt.filetype = "yaml.ansible"
     end
   end,
