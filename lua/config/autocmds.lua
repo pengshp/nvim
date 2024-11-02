@@ -11,28 +11,26 @@ vim.api.nvim_create_autocmd("LspAttach", {
   end,
 })
 
--- Ansible
--- Create an autocommand for "BufRead" events
--- vim.api.nvim_create_autocmd("BufRead", {
---   -- This autocommand will only trigger if the buffer name matches the following patterns
---   pattern = { "*.yaml", "*.yml" },
---   -- The autocommand will trigger the following lua function
---   callback = function()
---     -- In lua, `[[ ... ]]` is a literal string. If i used double quotes
---     -- instead, then next line would look like this:
---     --
---     -- if vim.fn.search("hosts:\\|tasks:", "nw") then
---     if vim.fn.search("hosts:", "nw") then
---       --
---       -- Notice how i had to escape the backslash
---       -- if vim.fn.search([[hosts:\|tasks:]], "nw") then
---       -- Thi uses Neovim's options api. Alternatively, you could do this:
---       --
---       -- `vim.cmd("set filetype = yaml.ansible")`
---       vim.opt.filetype = "yaml.ansible"
---     end
---   end,
--- })
+local ft_lsp_group = vim.api.nvim_create_augroup("ft_lsp_group", { clear = true })
+vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
+  pattern = { "docker-compose.yaml", "compose.yaml" },
+  group = ft_lsp_group,
+  desc = "Fix the issue where the LSP does not start with docker-compose.",
+  callback = function()
+    vim.opt.filetype = "yaml.docker-compose"
+  end,
+})
+
+vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
+  pattern = { "*.yml", "*.yaml" },
+  group = ft_lsp_group,
+  desc = "Fix the issue where the LSP don't start with ansible.",
+  callback = function()
+    if vim.fn.findfile("ansible.cfg", ".") then
+      vim.opt.filetype = "yaml.ansible"
+    end
+  end,
+})
 
 -- 根据文件类型（filetype)，来自动切换拼写检查功能
 local spell_group = vim.api.nvim_create_augroup("spell_group", { clear = true })
