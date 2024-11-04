@@ -70,16 +70,6 @@ return {
     config = true,
   },
   {
-    "Exafunction/codeium.nvim",
-    event = "BufReadPost",
-    enabled = false,
-    opts = {
-      enterprise_mode = false,
-      detect_proxy = true,
-      enable_chat = false,
-    },
-  },
-  {
     "echasnovski/mini.animate",
     opts = {
       open = { enable = false },
