@@ -38,7 +38,7 @@ return {
         python = { "ruff" },
         yaml = { "yamllint" },
         bash = { "shellcheck" },
-        markdown = { "markdownlint" },
+        markdown = { "markdownlint-cli2" },
         dockerfile = { "hadolint" },
       },
       linters = {},
@@ -72,6 +72,13 @@ return {
       -- disable the keymap
       -- { "<c-space>", false },
       { "<A-space>", desc = "Increment selection" },
+    },
+  },
+  -- completion
+  {
+    "saghen/blink.cmp",
+    opts = {
+      keymap = { preset = "default" },
     },
   },
 }
