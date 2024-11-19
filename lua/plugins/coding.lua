@@ -14,7 +14,7 @@ return {
         yaml = { "yamlfmt" },
         sql = { "sqlfmt" },
         css = { "prettier" },
-        xml = { "xmlformat" },
+        xml = { "xmlformatter" },
       },
       -- the options you set here will be merged with the builtin formatters.
       -- you can also define any custom formatters here.
