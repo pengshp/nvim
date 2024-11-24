@@ -10,10 +10,11 @@ return {
         python = { "ruff" },
         json = { "jq" },
         toml = { "taplo" },
-        markdown = { "markdownlint", "markdown-toc" },
+        markdown = { "prettier" },
         yaml = { "yamlfmt" },
         sql = { "sqlfmt" },
         css = { "prettier" },
+        scss = { "prettier" },
         xml = { "xmlformatter" },
       },
       -- the options you set here will be merged with the builtin formatters.
@@ -23,6 +24,9 @@ return {
         -- # example of using shfmt with extra args
         shfmt = {
           prepend_args = { "-i", "4", "-ci" },
+        },
+        prettier = {
+          prepend_args = { "--tab-width", "4" },
         },
       },
     },
@@ -38,7 +42,6 @@ return {
         python = { "ruff" },
         yaml = { "yamllint" },
         bash = { "shellcheck" },
-        markdown = { "markdownlint-cli2" },
         dockerfile = { "hadolint" },
       },
       linters = {},
