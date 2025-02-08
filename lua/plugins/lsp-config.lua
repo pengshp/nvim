@@ -61,7 +61,7 @@ return {
           },
         },
         bashls = {
-          filetypes = { "sh" },
+          filetypes = { "bash", "sh" },
           settings = {
             bashIde = {
               globPattern = "*@(.sh|.inc|.bash|.command)",
@@ -83,7 +83,7 @@ return {
               diagnostics = {
                 globals = { "vim" },
               },
-              format = { enable = true },
+              forman = { enable = false },
               hint = {
                 enable = true,
               },
