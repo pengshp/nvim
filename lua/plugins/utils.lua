@@ -38,9 +38,4 @@ return {
       define_autocmd = false,
     },
   },
-  {
-    "willothy/wezterm.nvim",
-    cmd = "WeztermSpawn",
-    config = true,
-  },
 }
