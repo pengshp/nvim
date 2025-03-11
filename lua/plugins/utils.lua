@@ -1,26 +1,4 @@
 return {
-  -- Run code.
-  {
-    "CRAG666/code_runner.nvim",
-    event = "LspAttach",
-    opts = {
-      mode = "float",
-      filetype = {
-        lua = "nvim -l",
-        markdown = "glow",
-        python = "python -u",
-        go = "go run",
-        sh = "bash",
-      },
-    },
-    keys = {
-      -- stylua: ignore
-      -- Alt-r
-      { "<A-r>", function() require("code_runner.commands").run_filetype() end, desc = "Run file" },
-    },
-    cmd = { "RunCode", "RunFile", "RunProject" },
-  },
-
   -- Fcitx5 config
   {
     "pysan3/fcitx5.nvim",

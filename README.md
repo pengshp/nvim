@@ -1,14 +1,15 @@
 # LazyVim
 
 <!--toc:start-->
+
 - [LazyVim](#lazyvim)
 - [Themes](#themes)
 - [Usage](#usage)
 - [Features](#features)
 - [LSP and Treesitter](#lsp-and-treesitter)
-- [cmp](#cmp)
+- [Code completion](#code-completion)
 - [Reference](#reference)
-<!--toc:end-->
+  <!--toc:end-->
 
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
@@ -22,20 +23,16 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 
 ```bash
 git clone https://github.com/pengshp/nvim.git ~/.config/nvim
-nvim --headless +"Lazy! sync" +qa
+nvim
 ```
 
 ## Features
 
-| Plugin                     | Desc                                             |
-| -------------------------- | ------------------------------------------------ |
-| chrisgrieser/nvim-scissors | Automagical editing and creation of snippets.    |
-| pysan3/fcitx5.nvim         | switch and restore fcitx state for each buffer.  |
-| akinsho/toggleterm.nvim    | manage multiple terminal windows.                |
-| CRAG666/code_runner.nvim   | The best code runner you could have.             |
-| yetone/avante.nvim         | Use your Neovim like using Cursor AI IDE!        |
-| willothy/wezterm.nvim      | Utilities for interacting with the wezterm cli.  |
-| HakonHarnes/img-clip.nvim  | Effortlessly embed images into any markup language|
+| Plugin                     | Desc                                               |
+| -------------------------- | -------------------------------------------------- |
+| chrisgrieser/nvim-scissors | Automagical editing and creation of snippets.      |
+| pysan3/fcitx5.nvim         | switch and restore fcitx state for each buffer.    |
+| HakonHarnes/img-clip.nvim  | Effortlessly embed images into any markup language |
 
 ## LSP and Treesitter
 
@@ -55,7 +52,7 @@ nvim --headless +"Lazy! sync" +qa
 | kcl        | kcl         |            |
 | ansible    | ansiblels   | yaml       |
 
-## cmp
+## Code completion
 
 ~~hrsh7th/nvim-cmp~~
 

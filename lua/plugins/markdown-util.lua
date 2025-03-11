@@ -10,7 +10,6 @@ return {
   },
   {
     "HakonHarnes/img-clip.nvim",
-    event = "VeryLazy",
     opts = {
       -- recommended settings
       default = {
@@ -27,5 +26,6 @@ return {
       -- stylua: ignore
       { "<leader>i", "<cmd>PasteImage<cr>", desc = "Paste image from system clipboard" },
     },
+    ft = { "markdown" },
   },
 }
