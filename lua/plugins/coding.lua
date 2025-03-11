@@ -77,11 +77,4 @@ return {
       { "<A-space>", desc = "Increment selection" },
     },
   },
-  -- completion
-  {
-    "saghen/blink.cmp",
-    opts = {
-      keymap = { preset = "default" },
-    },
-  },
 }
