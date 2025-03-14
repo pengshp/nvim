@@ -1,23 +1,17 @@
 return {
-  {
-    "pnx/lualine-lsp-status",
-    enabled = true,
-  },
-  {
-    "nvim-lualine/lualine.nvim",
-    opts = {
-      options = {
-        icons_enabled = true,
-        section_separators = { left = "", right = "" },
-        component_separators = { left = "", right = "" },
+  "nvim-lualine/lualine.nvim",
+  opts = {
+    options = {
+      icons_enabled = true,
+      section_separators = { left = "", right = "" },
+      component_separators = { left = "", right = "" },
+    },
+    sections = {
+      lualine_b = {
+        { "branch", icon = "" },
+        "diagnostics",
       },
-      sections = {
-        lualine_b = {
-          { "branch", icon = "" },
-          "diagnostics",
-        },
-        lualine_z = { "lsp-status" },
-      },
+      lualine_z = { "lsp_status" },
     },
   },
 }
