@@ -13,7 +13,7 @@ return {
         term = "keyboard-us",
       },
       remember_prior = true,
-      define_autocmd = false,
+      define_autocmd = true,
     },
   },
 }
