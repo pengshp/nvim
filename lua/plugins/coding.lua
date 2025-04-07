@@ -6,8 +6,8 @@ return {
       formatters_by_ft = {
         lua = { "stylua" },
         bash = { "shfmt" },
-        go = { "gofmt", "goimports", "gofumpt" },
-        python = { "ruff" },
+        go = { "goimports", "gofumpt" },
+        python = { "ruff_organize_imports", "ruff_format" },
         json = { "jq" },
         toml = { "taplo" },
         markdown = { "prettier" },
