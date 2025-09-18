@@ -2,16 +2,20 @@ return {
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    enabled = true,
+    enabled = false,
     lazy = false,
     priority = 1000,
     opts = {
-      flavour = "macchiato", -- latte, frappe, macchiato, mocha
+      flavour = "auto", -- latte, frappe, macchiato, mocha
       background = { -- :h background
         light = "latte",
         dark = "macchiato",
       },
       transparent_background = true,
+      float = {
+        transparent = true, -- enable transparent floating windows
+        solid = true, -- use solid styling for floating windows, see |winborder|
+      },
       styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
         comments = { "italic" }, -- Change the style of comments
         conditionals = { "italic" },
@@ -45,7 +49,6 @@ return {
         symbols_outline = true,
         telescope = true,
         which_key = true,
-        -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
       },
     },
   },
@@ -53,18 +56,20 @@ return {
   {
     "folke/tokyonight.nvim",
     opts = {
+      style = "moon",
+      light_style = "day",
       transparent = true,
       styles = {
         sidebars = "transparent",
-        -- floats = "transparent",
+        floats = "transparent",
       },
     },
-    enabled = false,
+    enabled = true,
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "tokyonight",
     },
   },
 }

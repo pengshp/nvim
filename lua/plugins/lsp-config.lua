@@ -1,6 +1,6 @@
 return {
   {
-    "williamboman/mason-lspconfig.nvim",
+    "mason-org/mason-lspconfig.nvim",
     opts = {
       ensure_installed = {
         "lua_ls",
@@ -19,10 +19,6 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
-    -- init = function()
-    --   local keys = require("lazyvim.plugins.lsp.keymaps").get()
-    --   keys[#keys + 1] = { "<C-Space>", false }
-    -- end,
     -- @class PluginLspOpts
     opts = {
       -- @type lspconfig.options
@@ -150,7 +146,6 @@ return {
             redhat = { telemetry = { enabled = false } },
           },
         },
-        marksman = {},
       },
     },
   },
