@@ -9,7 +9,7 @@
 - [LSP and Treesitter](#lsp-and-treesitter)
 - [Code completion](#code-completion)
 - [Reference](#reference)
-  <!--toc:end-->
+    <!--toc:end-->
 
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
@@ -31,7 +31,7 @@ nvim
 | Plugin                     | Desc                                               |
 | -------------------------- | -------------------------------------------------- |
 | chrisgrieser/nvim-scissors | Automagical editing and creation of snippets.      |
-| pysan3/fcitx5.nvim         | switch and restore fcitx state for each buffer.    |
+| keaising/im-select.nvim    | switch and restore fcitx state for each buffer.    |
 | HakonHarnes/img-clip.nvim  | Effortlessly embed images into any markup language |
 
 ## LSP and Treesitter
