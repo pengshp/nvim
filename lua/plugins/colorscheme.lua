@@ -2,7 +2,7 @@ return {
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    enabled = true,
+    enabled = false,
     lazy = false,
     priority = 1000,
     opts = {
@@ -30,21 +30,6 @@ return {
         types = {},
         operators = {},
       },
-      integrations = {
-        blink_cmp = true,
-        gitsigns = true,
-        treesitter = true,
-        mini = {
-          enabled = true,
-          indentscope_color = "mauve",
-        },
-        dashboard = true,
-        flash = true,
-        markdown = true,
-        mason = true,
-        symbols_outline = true,
-        which_key = true,
-      },
     },
   },
 
@@ -59,12 +44,12 @@ return {
         floats = "transparent",
       },
     },
-    enabled = false,
+    enabled = true,
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "tokyonight",
     },
   },
 }

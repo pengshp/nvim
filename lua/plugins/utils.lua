@@ -20,9 +20,11 @@ return {
   ]]
   {
     "keaising/im-select.nvim",
+    event = "ModeChanged",
+    cond = vim.fn.executable("fcitx5-remote") == 1,
     config = function()
       require("im_select").setup({
-        default_im_select = "keyboard-us",
+        default_im_select = "keyboard-us", -- rime
         default_command = "fcitx5-remote",
         set_default_events = { "InsertLeave", "CmdlineLeave" },
         set_previous_events = { "InsertEnter" },
