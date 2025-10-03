@@ -3,7 +3,7 @@ return {
   opts = {
     keymap = { preset = "default" },
     cmdline = {
-      enabled = false,
+      enabled = true,
     },
   },
 }
