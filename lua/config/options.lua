@@ -21,6 +21,21 @@ for key, val in pairs(options) do
   vim.opt[key] = val
 end
 
+-- Copy/Paste when using ssh on a remote server
+if vim.env.SSH_CONNECTION and pcall(require, "vim.ui.clipboard.osc52") then
+  vim.g.clipboard = {
+    name = "OSC 52",
+    copy = {
+      ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+      ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+    },
+    paste = {
+      ["+"] = require("vim.ui.clipboard.osc52").paste("+"),
+      ["*"] = require("vim.ui.clipboard.osc52").paste("*"),
+    },
+  }
+end
+
 -- GUI neovide config
 if vim.g.neovide then
   -- Put anything you want to happen only in Neovide here
