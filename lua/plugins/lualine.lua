@@ -7,8 +7,8 @@ return {
       section_separators = { left = "", right = "" },
       component_separators = { left = "", right = "" },
       disabled_filetypes = {
-        "snacks_dashboard",
-        "dashboard",
+        statusline = { "snacks_dashboard" },
+        winbar = { "snacks_dashboard" },
       },
     },
     sections = {

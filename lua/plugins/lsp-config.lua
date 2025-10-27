@@ -10,7 +10,7 @@ return {
         "gopls",
         "dockerls",
         "jsonls",
-        "taplo",
+        "tombi",
         "yamlls",
         "marksman",
         "terraformls",
@@ -85,11 +85,6 @@ return {
             },
           },
           single_file_support = true,
-        },
-        taplo = {
-          filetypes = { "toml" },
-          -- IMPORTANT: this is required for taplo LSP to work in non-git repositories
-          root_dir = require("lspconfig.util").root_pattern("*.toml", ".git"),
         },
         dockerls = {},
         jsonls = {
