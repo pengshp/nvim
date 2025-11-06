@@ -45,9 +45,9 @@ return {
         dockerfile = { "hadolint" },
         toml = { "tombi" },
       },
-      linters = {},
     },
   },
+
   -- treesitter
   {
     "nvim-treesitter/nvim-treesitter",
