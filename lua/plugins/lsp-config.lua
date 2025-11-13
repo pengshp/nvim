@@ -7,7 +7,7 @@ return {
         "basedpyright",
         "bashls",
         "gopls",
-        "dockerls",
+        "docker_language_server",
         "jsonls",
         "tombi",
         "yamlls",
@@ -49,13 +49,15 @@ return {
               diagnostics = {
                 globals = { "vim" },
               },
-              forman = { enable = false },
+              format = { enable = false },
               hint = {
                 enable = true,
               },
             },
           },
         },
+        taplo = { enabled = false },
+        docker_compose_language_service = { enabled = false },
         gopls = {
           -- don't want this server to be installed with mason
           mason = true,
