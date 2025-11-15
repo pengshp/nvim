@@ -9,7 +9,7 @@
 - [LSP and Treesitter](#lsp-and-treesitter)
 - [Code completion](#code-completion)
 - [Reference](#reference)
-    <!--toc:end-->
+  <!--toc:end-->
 
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
@@ -41,11 +41,11 @@ nvim
 | python     | pylsp       | python     |
 | lua        | lua_ls      | lua        |
 | golang     | gopls       | go         |
-| dockerfile | dockerls    | dockerfile |
+| dockerfile | docker_ls   | dockerfile |
 | bash       | bashls      | bash       |
 | yaml       | yamlls      | yaml       |
 | json       | jsonls      | json,jsonc |
-| toml       | taplo       | toml       |
+| toml       | tombi       | toml       |
 | sql        | sqlls       | sql        |
 | markdown   | marksman    | markdown   |
 | terraform  | terraformls | hcl        |
