@@ -10,7 +10,7 @@ return {
         python = { "ruff_organize_imports", "ruff_format" },
         json = { "prettier" },
         toml = { "tombi" },
-        markdown = { "prettier" },
+        markdown = { "rumdl" },
         yaml = { "yamlfmt" },
         sql = { "sqlfmt" },
         css = { "prettier" },
@@ -28,6 +28,11 @@ return {
         prettier = {
           prepend_args = { "--tab-width", "4" },
         },
+        rumdl = {
+          command = "rumdl",
+          args = { "fmt", "$FILENAME" },
+          stdin = false,
+        },
       },
     },
   },
@@ -44,6 +49,7 @@ return {
         bash = { "shellcheck" },
         dockerfile = { "hadolint" },
         toml = { "tombi" },
+        markdown = { "rumdl" },
       },
     },
   },
