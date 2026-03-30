@@ -11,7 +11,6 @@ return {
         "jsonls",
         "tombi",
         "yamlls",
-        "marksman",
         "terraformls",
       },
       automatic_enable = {

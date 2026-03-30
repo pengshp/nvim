@@ -16,6 +16,7 @@ return {
         css = { "prettier" },
         scss = { "prettier" },
         xml = { "xmlformatter" },
+        kdl = { "kdlfmt" },
       },
       -- the options you set here will be merged with the builtin formatters.
       -- you can also define any custom formatters here.
