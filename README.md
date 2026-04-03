@@ -22,6 +22,7 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 ## Usage
 
 ```bash
+mv ~/.config/nvim ~/.config/nvim.bak
 git clone https://github.com/pengshp/nvim.git ~/.config/nvim
 nvim
 ```
@@ -38,16 +39,16 @@ nvim
 
 | Language   | LSP         | Treesitter |
 | ---------- | ----------- | ---------- |
-| python     | pylsp       | python     |
+| python     | basedpyright | python     |
 | lua        | lua_ls      | lua        |
 | golang     | gopls       | go         |
 | dockerfile | docker_ls   | dockerfile |
 | bash       | bashls      | bash       |
 | yaml       | yamlls      | yaml       |
-| json       | jsonls      | json,jsonc |
+| json       | jsonls      | json       |
 | toml       | tombi       | toml       |
 | sql        | sqlls       | sql        |
-| markdown   | marksman    | markdown   |
+| markdown   | rumdl       | markdown   |
 | terraform  | terraformls | hcl        |
 | kcl        | kcl         |            |
 | ansible    | ansiblels   | yaml       |

@@ -56,8 +56,6 @@ return {
           },
         },
         taplo = { enabled = false },
-        dockerls = { enabled = false },
-        docker_compose_language_service = { enabled = false },
         gopls = {
           -- don't want this server to be installed with mason
           mason = true,

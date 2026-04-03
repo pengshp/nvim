@@ -29,11 +29,6 @@ return {
         prettier = {
           prepend_args = { "--tab-width", "4" },
         },
-        rumdl = {
-          command = "rumdl",
-          args = { "fmt", "$FILENAME" },
-          stdin = false,
-        },
       },
     },
   },
@@ -61,7 +56,7 @@ return {
     opts = {
       ensure_installed = {
         "json",
-        "jsonc",
+        "json5",
         "python",
         "yaml",
         "dockerfile",
