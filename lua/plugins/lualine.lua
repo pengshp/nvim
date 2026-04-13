@@ -4,8 +4,8 @@ return {
     options = {
       icons_enabled = true,
       theme = "auto",
-      section_separators = { left = "", right = "" },
-      component_separators = { left = "", right = "" },
+      section_separators = {},
+      component_separators = {},
       disabled_filetypes = {
         statusline = { "snacks_dashboard" },
         winbar = { "snacks_dashboard" },
@@ -14,9 +14,7 @@ return {
     sections = {
       lualine_b = {
         { "branch", icon = "" },
-        "diagnostics",
       },
-      lualine_c = { { "filename", path = 1 }, "filetype" },
       lualine_z = { "lsp_status" },
     },
   },

@@ -11,15 +11,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
   end,
 })
 
-local ft_lsp_group = vim.api.nvim_create_augroup("ft_lsp_group", { clear = true })
-vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
-  pattern = { "docker-compose.yaml", "compose.yaml" },
-  group = ft_lsp_group,
-  desc = "Fix the issue where the LSP does not start with docker-compose.",
-  callback = function()
-    vim.bo.filetype = "yaml.docker-compose"
-  end,
-})
 -- TODO: fix issue.
 --
 --[[
@@ -38,6 +29,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 --]]
+
 -- 根据文件类型（filetype)，来自动切换拼写检查功能
 local spell_group = vim.api.nvim_create_augroup("spell_group", { clear = true })
 vim.api.nvim_create_autocmd("FileType", {
