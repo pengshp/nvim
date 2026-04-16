@@ -15,6 +15,9 @@ return {
       lualine_b = {
         { "branch", icon = "" },
       },
+      lualine_c = { { "filename", path = 4 }, "searchcount" },
+      lualine_x = { "location", "progress" },
+      lualine_y = { "filetype", "fileformat", "encoding" },
       lualine_z = { "lsp_status" },
     },
   },
